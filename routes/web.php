@@ -11,6 +11,16 @@
 |
 */
 
+use App\Http\Controllers\AboutController;
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('about','AboutController@init');
+
+Route::get('news','NewsController@init');
+
+Route::get('home', function () {
+    return view('home');
 });
