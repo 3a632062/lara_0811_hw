@@ -21,6 +21,4 @@ Route::get('about','AboutController@init');
 
 Route::get('news','NewsController@init');
 
-Route::get('home', function () {
-    return view('home');
-});
+Route::get('home','HomeController@init');
